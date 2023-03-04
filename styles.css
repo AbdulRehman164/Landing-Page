@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* colors */
+    --darkBgColor: #1f2937;
+    --heroMainTextColor: #f9faf8;
+    --heroSecondryTextColor: #e5e7eb ;
+    --buttonColor: #3882f6;
+    --informationHeaderColor: #1f2937;
+    --qouteBackgroundColor: #e5e7eb ;
+    --qouteTextcolor: #677385;
+    --headerImg: rgb(144, 143, 143);
+    /* fonts */
+
+    /* genral styles */
+    --mainPadding: 0 12%;
+}
+
+/* utility classes */
+.headpcolor{
+    color: var(--heroSecondryTextColor);
+    font-size: 18px;
+}
+.headcolor{
+    color: var(--heroMainTextColor);
+}
+body{
+    font-family: 'roboto', sans-serif;
+    
+}
+
+header{
+    background-color: var(--darkBgColor);
+    padding: var(--mainPadding);
+    height: 90vh;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.header-logo{
+    font-size: 1.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: var(--heroSecondryTextColor);
+    margin-left: 20px;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    margin-top: 20vh;
+}
+
+.header-heading{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.signup-button{
+    background: var(--buttonColor);
+    padding: 8px 25px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.img{
+    background: var(--headerImg);
+    height: 33vh;
+    display: grid;
+    place-content: center;
+}
+
+main{
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.random-heading{
+    text-align: center;
+    color: var(--informationHeaderColor);
+    font-weight: bolder;
+    font-size: 2.25rem;
+    margin-top: 4rem;
+}
+.random-info{
+    margin: var(--mainPadding);
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 4rem 4rem 8rem;
+}
+.illustration{
+    width: 12vw;
+    height: 12vw;
+    border: 5px solid var(--buttonColor);
+    border-radius: 15px;
+}
+.illustration-subtext{
+    text-align: center;
+    margin-right: 2.5rem;
+    margin-top: 0.5rem;
+    color: gray;
+}
+
+.quotation{
+    background-color: var(--qouteBackgroundColor);
+    color: var(--qouteTextcolor);
+    font-size: 2.25rem;
+    font-style: italic;
+    padding:  5rem 12%;
+
+}
+.author{
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: normal;
+    color: var(--informationHeaderColor);
+    text-align: right;
+    margin-top: 0.4rem;
+}
+
+.action-call{
+    background-color: var(--buttonColor);
+    margin: 6rem;
+    padding: 3rem 5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.action-call-button button{
+    color: white;
+    border: 2px solid white;
+}
+
+footer{
+    text-align: center;
+    color: var(--heroSecondryTextColor);
+    background-color: var(--darkBgColor);
+    padding: 2rem 0 5rem;
+}
